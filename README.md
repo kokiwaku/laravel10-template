@@ -54,30 +54,23 @@ root/
 
 ## Usage
 
+[template reposigory](https://docs.github.com/ja/repositories/creating-and-managing-repositories/creating-a-template-repository)として作成しているので、
+本repositoryをtemplateとして、新規Repositoryを作成可能です。
+
 ### Start
 
-docker compose でcontainer類を作成
+docker compose でcontainer類を作成。
 Laravelを[create project](https://laravel.com/docs/10.x/installation#creating-a-laravel-project)して、
 アプリケーションを動作可能な状態にセットアップする。
 
-#### 1. repositoryをclone
-
-- 本repository をそのまま使う場合
-
-
-- 本repositoryをtemplateとして別respotiryを作成する場合
-
-
-
-
-#### 2. laravel projectを作成
+#### 1. laravel projectを作成
 ```
 $ make create-project
 ```
 
-#### 3. xdebugの設定
+#### 2. xdebugの設定
 
-xdebugを使いたい場合、必要に応じて設定
+xdebugを使う場合、必要に応じて設定
 
 参考：
 - vscode：[【PHP】VScodeでXdebugを使ってデバッグする](https://zenn.dev/ikeo/articles/244d6a8042bcd8c55fe9#vscode%E3%81%AE%E8%A8%AD%E5%AE%9A)
@@ -92,7 +85,7 @@ $ make down
 
 ### Reference
 
-- 公式document
+- Laravel10 document
 https://laravel.com/docs/10.x/
 - 構成に関して大いに参考にさせて頂いた
 https://github.com/ucan-lab/docker-laravel
